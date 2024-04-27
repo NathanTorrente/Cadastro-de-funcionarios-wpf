@@ -9,7 +9,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image 11.png" />
+    <None Remove="image 12.png" />
+    <None Remove="image 13.png" />
+    <None Remove="image 14.png" />
+    <None Remove="image 5.png" />
+    <None Remove="image 6.png" />
+    <None Remove="image 9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image 11.png" />
+    <Resource Include="image 12.png" />
+    <Resource Include="image 13.png" />
+    <Resource Include="image 14.png" />
+    <Resource Include="image 5.png" />
+    <Resource Include="image 6.png" />
+    <Resource Include="image 9.png" />
   </ItemGroup>
 
 </Project>

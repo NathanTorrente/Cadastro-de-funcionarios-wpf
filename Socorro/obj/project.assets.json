@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natha\\Pictures\\socorro\\Cadastro-de-funcionarios-wpf\\Socorro\\Socorro.csproj",
+      "projectUniqueName": "C:\\Users\\natha\\Music\\Cadastro-de-funcionarios-wpf\\Socorro\\Socorro.csproj",
       "projectName": "Socorro",
-      "projectPath": "C:\\Users\\natha\\Pictures\\socorro\\Cadastro-de-funcionarios-wpf\\Socorro\\Socorro.csproj",
+      "projectPath": "C:\\Users\\natha\\Music\\Cadastro-de-funcionarios-wpf\\Socorro\\Socorro.csproj",
       "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\natha\\Pictures\\socorro\\Cadastro-de-funcionarios-wpf\\Socorro\\obj\\",
+      "outputPath": "C:\\Users\\natha\\Music\\Cadastro-de-funcionarios-wpf\\Socorro\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",

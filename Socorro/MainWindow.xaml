@@ -27,31 +27,28 @@
             </Grid.Background>
 
             <Label Content="Buscar menu" HorizontalAlignment="Left" Margin="38,130,0,0" VerticalAlignment="Top" Height="24" Width="82" FontSize="10" Opacity="0.6"/>
-            <Button Content="Aluno" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
-                </Button.BorderBrush>
-            </Button>
-            <Button Content="Matrícula" HorizontalAlignment="Center" Margin="0,348,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
-                </Button.BorderBrush>
-            </Button>
-            <Button Content="Configuração" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF707070" Opacity="0.005"/>
-                </Button.BorderBrush>
-            </Button>
-            <Button Content="Sair" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" FontWeight="Bold" Click="Button_Click">
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF6F2C2C" Opacity="0"/>
-                </Button.BorderBrush>
-            </Button>
 
         </Grid>
 
         <Rectangle HorizontalAlignment="Left" Height="36" Margin="21,25,0,0" Grid.Row="1" Stroke="#FFE9E9E9" VerticalAlignment="Top" Width="192" Fill="#FFD9D9D9" RadiusX="10" RadiusY="10"/>
 
+        <Ellipse HorizontalAlignment="Left" Height="55" Margin="11,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5" Stroke="Black">
+            <Ellipse.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.3"/>
+            </Ellipse.Fill>
+
+            <Ellipse.RenderTransform>
+
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.475"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+
+            </Ellipse.RenderTransform>
+
+        </Ellipse>
         <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
                FontWeight="Bold" FontSize="18" Foreground="#0066cc" Content="" Height="31"/>
         <Grid Grid.Column="1" Background="#FFD9D9D9" Grid.RowSpan="2">
@@ -70,16 +67,23 @@
             </StackPanel>
             <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"
                   HorizontalAlignment="Left"/>
-            <Button Content="Turma" HorizontalAlignment="Left" Margin="-274,238,0,0" VerticalAlignment="Top" Width="274" Grid.Row="2" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
+            <Button HorizontalAlignment="Left" Margin="-274,238,0,0" VerticalAlignment="Top" Width="274" Grid.Row="2" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_3" Background="{x:Null}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/image 6.png" Width="36" Height="24" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                        <Image.OpacityMask>
+                            <ImageBrush ImageSource="/image 6.png"/>
+                        </Image.OpacityMask>
+                    </Image>
+                    <TextBlock Text="Cursos"/>
+                </StackPanel>
                 <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
                 </Button.BorderBrush>
             </Button>
-            <Label FontWeight="Bold" Content="Name:" Margin="10,10,206,501" Grid.Row="2"/>
 
+            <Image Source="/user1.png" Margin="-266,0,506,437" Grid.Row="1" Grid.RowSpan="2"/>
 
-
-            <Button HorizontalAlignment="Left" Margin="54,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White">
+            <Button HorizontalAlignment="Left" Margin="54,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Click="Button_Click_Aluno">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="15" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
@@ -87,6 +91,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Consultar  &#xA;   Aluno" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="204,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.ColumnSpan="2">
                 <Button.Template>
@@ -96,8 +101,9 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Consultar&#xD;&#xA;  Escolas" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
-            <Button HorizontalAlignment="Left" Margin="50,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.Column="1">
+            <Button HorizontalAlignment="Left" Margin="50,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.Column="1" Click="Button_Click_3">
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border CornerRadius="15" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
@@ -105,6 +111,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Consultar &#xD;&#xA;Cursos" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="54,199,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White">
                 <Button.Template>
@@ -114,6 +121,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Pagamentos" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="204,199,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.ColumnSpan="2">
                 <Button.Template>
@@ -123,6 +131,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Calendário &#xD;&#xA; Acadêmico" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="50,199,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.Column="1">
                 <Button.Template>
@@ -132,6 +141,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Consultar &#xD;&#xA;Funcionários" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="54,331,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White">
                 <Button.Template>
@@ -141,6 +151,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Disciplinas&#xD;&#xA;" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
             <Button HorizontalAlignment="Left" Margin="204,331,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.ColumnSpan="2">
                 <Button.Template>
@@ -150,6 +161,7 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Label FontWeight="Bold" Content="Suporte e&#xD;&#xA;Serviços" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
         </Grid>
         <Line X1="0" Y1="0" X2="250" Y2="0" Stroke="Black" StrokeThickness="0.7" Margin="21,122,8,250" Grid.Row="1"/>
@@ -165,7 +177,7 @@
             <Image Source="/Rectangle 1944.png" Margin="-220,51,242,-40" Grid.Row="1"/>
         </Grid>
 
-        <Button HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Background="#FFC2FFF4" Click="Button_Click_2">
+        <Button HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Background="#FFC2FFF4" Click="Button_Click_1">
             <StackPanel Orientation="Horizontal">
                 <Image Source="/image 7.png" Width="20" Height="20" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392"/>
                 <TextBlock Text="Início"/>
@@ -175,21 +187,95 @@
             </Button.BorderBrush>
         </Button>
 
-
-        <Button Content="Escola" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold" Click="Button_Click_1">
-            
+        <Button HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_2" Background="{x:Null}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 5.png" Width="36" Height="24" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 5.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Escola"/>
+            </StackPanel>
             <Button.BorderBrush>
-                
-                <SolidColorBrush Color="#FF707070" Opacity="0.01"/>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
             </Button.BorderBrush>
-            
         </Button>
-
-        <Button Content="Cursos" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
+        <Button HorizontalAlignment="Center" Margin="0,257,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_4" Background="{x:Null}">
             <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
             </Button.BorderBrush>
-
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 9.png" Width="36" Height="24" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 9.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Turma"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
+            </Button.BorderBrush>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 11.png" Width="36" Height="24" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 11.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Aluno"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="0,329,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_6">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
+            </Button.BorderBrush>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 14.png" Width="32" Height="24" Margin="-150,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 14.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Matrícula"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_7">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
+            </Button.BorderBrush>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 13.png" Width="32" Height="24" Margin="-130,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 13.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Configuração"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="0,401,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Click="Button_Click_8">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
+            </Button.BorderBrush>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/image 12.png" Width="32" Height="24" Margin="-180,0,5,0" RenderTransformOrigin="-2.715,0.392">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/image 12.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBlock Text="Sair"/>
+            </StackPanel>
         </Button>
 
     </Grid>
