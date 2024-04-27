@@ -82,16 +82,24 @@
             </Button>
 
             <Image Source="/user1.png" Margin="-266,0,506,437" Grid.Row="1" Grid.RowSpan="2"/>
-
-            <Button HorizontalAlignment="Left" Margin="54,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Click="Button_Click_Aluno">
+            <Button HorizontalAlignment="Left" Margin="48,62,0,0" VerticalAlignment="Top" Width="142" Grid.Row="2" Height="124" Foreground="Black" FontWeight="Bold" Background="White" Click="Button_Click_Aluno">
                 <Button.Template>
-                    <ControlTemplate TargetType="Button">
+                    <ControlTemplate TargetType="{x:Type Button}">
                         <Border CornerRadius="15" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-                <Label FontWeight="Bold" Content="Consultar  &#xA;   Aluno" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/alunos.png" Width="78" Height="69" RenderTransformOrigin="-2.780,0.392">
+                        <Image.OpacityMask>
+                            <ImageBrush ImageSource="/alunos.png"/>
+                        </Image.OpacityMask>
+                    </Image>
+                </StackPanel>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0.02"/>
+                </Button.BorderBrush>
             </Button>
             <Button HorizontalAlignment="Left" Margin="204,62,0,0" Grid.Row="2" VerticalAlignment="Top" Height="115" Width="130" Background="White" Foreground="{x:Null}" BorderBrush="White" Grid.ColumnSpan="2">
                 <Button.Template>
@@ -163,6 +171,7 @@
                 </Button.Template>
                 <Label FontWeight="Bold" Content="Suporte e&#xD;&#xA;Serviços" Height="44" Width="86" RenderTransformOrigin="0.884,0.847"/>
             </Button>
+            <TextBlock Margin="74,116,118,331" Grid.Row="2"><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="Consultar Aluno" FontWeight="Bold"/></TextBlock>
         </Grid>
         <Line X1="0" Y1="0" X2="250" Y2="0" Stroke="Black" StrokeThickness="0.7" Margin="21,122,8,250" Grid.Row="1"/>
 

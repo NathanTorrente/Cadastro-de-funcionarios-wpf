@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\App.xaml
-21494611467
+3355111460
 
-51984448627
+6-521152087
 198-688555687
-MainWindow.xaml;TelaMenuEscola.xaml;
+MainWindow.xaml;TelaLogin.xaml;TelaMenuEscola.xaml;
 
 False
 

@@ -64,3 +64,5 @@ C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windo
 C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windows\Socorro.pdb
 C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windows\Socorro.genruntimeconfig.cache
 C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windows\ref\Socorro.dll
+C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windows\TelaLogin.g.cs
+C:\Users\natha\Music\Cadastro-de-funcionarios-wpf\Socorro\obj\Debug\net8.0-windows\TelaLogin.baml

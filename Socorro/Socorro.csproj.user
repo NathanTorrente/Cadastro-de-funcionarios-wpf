@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="TelaLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="TelaMenuEscola.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -11,6 +14,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TelaLogin.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TelaMenuEscola.xaml">

@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="alunos.png" />
     <None Remove="image 11.png" />
     <None Remove="image 12.png" />
     <None Remove="image 13.png" />
@@ -16,6 +17,8 @@
     <None Remove="image 5.png" />
     <None Remove="image 6.png" />
     <None Remove="image 9.png" />
+    <None Remove="image edu.png" />
+    <None Remove="image user.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="alunos.png" />
     <Resource Include="image 11.png" />
     <Resource Include="image 12.png" />
     <Resource Include="image 13.png" />
@@ -30,6 +34,8 @@
     <Resource Include="image 5.png" />
     <Resource Include="image 6.png" />
     <Resource Include="image 9.png" />
+    <Resource Include="image edu.png" />
+    <Resource Include="image user.png" />
   </ItemGroup>
 
 </Project>
