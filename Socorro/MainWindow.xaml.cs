@@ -1,24 +1,48 @@
-﻿using System.Text;
+﻿using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Socorro
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private Window activeForm = null;
+        private TelaMenuEscola TelaMenuEscola;
+        private ContentControl contentControl;
+
         public MainWindow()
         {
             InitializeComponent();
+            TelaMenuEscola = new TelaMenuEscola();
+            TelaMenuEscola.Left = 274; // Adjust position to fit the left grid width
+            TelaMenuEscola.Top = 0;
+           
+            
+           
+        }
+       
+        private void AbrirTelaMenuEscola()
+        {
+            TelaMenuEscola telaMenuInicio = new TelaMenuEscola();
+           telaMenuInicio.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            AbrirTelaMenuEscola();
+        }
+      
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

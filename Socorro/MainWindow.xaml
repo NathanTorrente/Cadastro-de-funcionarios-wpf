@@ -42,7 +42,7 @@
                     <SolidColorBrush Color="#FF707070" Opacity="0.005"/>
                 </Button.BorderBrush>
             </Button>
-            <Button Content="Sair" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" FontWeight="Bold">
+            <Button Content="Sair" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" Width="274" Height="36" Background="Transparent" FontWeight="Bold" Click="Button_Click">
                 <Button.BorderBrush>
                     <SolidColorBrush Color="#FF6F2C2C" Opacity="0"/>
                 </Button.BorderBrush>
@@ -165,7 +165,7 @@
             <Image Source="/Rectangle 1944.png" Margin="-220,51,242,-40" Grid.Row="1"/>
         </Grid>
 
-        <Button HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Background="#FFC2FFF4">
+        <Button HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Foreground="Black" FontWeight="Bold" Background="#FFC2FFF4" Click="Button_Click_2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="/image 7.png" Width="20" Height="20" Margin="-170,0,5,0" RenderTransformOrigin="-2.715,0.392"/>
                 <TextBlock Text="Início"/>
@@ -176,10 +176,13 @@
         </Button>
 
 
-        <Button Content="Escola" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
+        <Button Content="Escola" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold" Click="Button_Click_1">
+            
             <Button.BorderBrush>
+                
                 <SolidColorBrush Color="#FF707070" Opacity="0.01"/>
             </Button.BorderBrush>
+            
         </Button>
 
         <Button Content="Cursos" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="274" Grid.Row="1" Height="36" Background="Transparent" Foreground="Black" FontWeight="Bold">
